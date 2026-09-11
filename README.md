@@ -27,6 +27,3 @@ They are draw.io files with uncompressed XML, so any of these works:
 - **On the desktop** — the [draw.io app](https://www.drawio.com/), with *File → Open*.
 - **In VS Code** — the *Draw.io Integration* extension renders a `.drawio` file in place, so cloning
   the repository is enough.
-
-Each diagram names the decision records behind it. The running agent is the authority, though: where a
-drawing and the code disagree, the code is right.
