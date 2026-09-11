@@ -1,0 +1,730 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="data-model" name="Data model">
+    <mxGraphModel dx="1201" dy="711" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="920" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;fontSize=18;fontStyle=1;align=left;verticalAlign=middle;" value="Royal Finance mock data model" vertex="1">
+          <mxGeometry height="30" width="600" x="20" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" parent="1" style="text;html=1;fontSize=11;fontColor=#666666;align=left;verticalAlign=middle;" value="Generated from resources/tables/*/schema.json. Where this drawing and a schema disagree, the schema is right." vertex="1">
+          <mxGeometry height="20" width="900" x="20" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_clients" parent="1" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;fillColor=#f5f7fa;strokeColor=#1d3557;fontSize=13;fontColor=#1d3557;" value="rf_clients" vertex="1">
+          <mxGeometry height="238" width="250" x="20" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_clients-r0" parent="rf_clients" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_clients-r0-k" parent="rf_clients-r0" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="PK" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_clients-r0-v" parent="rf_clients-r0" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="client_id : string" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_clients-r1" parent="rf_clients" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_clients-r1-k" parent="rf_clients-r1" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_clients-r1-v" parent="rf_clients-r1" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="phone_number : string" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_clients-r2" parent="rf_clients" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_clients-r2-k" parent="rf_clients-r2" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_clients-r2-v" parent="rf_clients-r2" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="social_sec_number : string" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_clients-r3" parent="rf_clients" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_clients-r3-k" parent="rf_clients-r3" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_clients-r3-v" parent="rf_clients-r3" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="active : boolean" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_clients-r4" parent="rf_clients" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_clients-r4-k" parent="rf_clients-r4" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_clients-r4-v" parent="rf_clients-r4" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="pre_approved_limit : number" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_clients-r5" parent="rf_clients" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_clients-r5-k" parent="rf_clients-r5" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_clients-r5-v" parent="rf_clients-r5" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="first_name : string" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_clients-r6" parent="rf_clients" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="186" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_clients-r6-k" parent="rf_clients-r6" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_clients-r6-v" parent="rf_clients-r6" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="last_name : string" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_clients-r7" parent="rf_clients" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="212" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_clients-r7-k" parent="rf_clients-r7" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_clients-r7-v" parent="rf_clients-r7" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="balance : number" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_cards" parent="1" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;fillColor=#f5f7fa;strokeColor=#1d3557;fontSize=13;fontColor=#1d3557;" value="rf_cards" vertex="1">
+          <mxGeometry height="238" width="250" x="315" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_cards-r0" parent="rf_cards" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_cards-r0-k" parent="rf_cards-r0" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="PK" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_cards-r0-v" parent="rf_cards-r0" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="card_id : string" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_cards-r1" parent="rf_cards" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_cards-r1-k" parent="rf_cards-r1" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="FK" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_cards-r1-v" parent="rf_cards-r1" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="client_id : string" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_cards-r2" parent="rf_cards" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_cards-r2-k" parent="rf_cards-r2" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_cards-r2-v" parent="rf_cards-r2" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="type : string" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_cards-r3" parent="rf_cards" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_cards-r3-k" parent="rf_cards-r3" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_cards-r3-v" parent="rf_cards-r3" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="number : string" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_cards-r4" parent="rf_cards" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_cards-r4-k" parent="rf_cards-r4" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_cards-r4-v" parent="rf_cards-r4" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="limit : number" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_cards-r5" parent="rf_cards" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_cards-r5-k" parent="rf_cards-r5" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_cards-r5-v" parent="rf_cards-r5" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="card_status : string" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_cards-r6" parent="rf_cards" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="186" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_cards-r6-k" parent="rf_cards-r6" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_cards-r6-v" parent="rf_cards-r6" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="due_day : number" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_cards-r7" parent="rf_cards" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="212" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_cards-r7-k" parent="rf_cards-r7" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_cards-r7-v" parent="rf_cards-r7" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="status_reason : string" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_card_invoices" parent="1" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;fillColor=#f5f7fa;strokeColor=#1d3557;fontSize=13;fontColor=#1d3557;" value="rf_card_invoices" vertex="1">
+          <mxGeometry height="160" width="250" x="610" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_card_invoices-r0" parent="rf_card_invoices" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_card_invoices-r0-k" parent="rf_card_invoices-r0" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="PK" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_card_invoices-r0-v" parent="rf_card_invoices-r0" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="invoice_id : string" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_card_invoices-r1" parent="rf_card_invoices" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_card_invoices-r1-k" parent="rf_card_invoices-r1" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="FK" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_card_invoices-r1-v" parent="rf_card_invoices-r1" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="card_id : string" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_card_invoices-r2" parent="rf_card_invoices" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_card_invoices-r2-k" parent="rf_card_invoices-r2" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_card_invoices-r2-v" parent="rf_card_invoices-r2" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="due_date : date" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_card_invoices-r3" parent="rf_card_invoices" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_card_invoices-r3-k" parent="rf_card_invoices-r3" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_card_invoices-r3-v" parent="rf_card_invoices-r3" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="status : string" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_card_invoices-r4" parent="rf_card_invoices" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_card_invoices-r4-k" parent="rf_card_invoices-r4" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_card_invoices-r4-v" parent="rf_card_invoices-r4" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="invoice_value : number" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_transactions" parent="1" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;fillColor=#f5f7fa;strokeColor=#1d3557;fontSize=13;fontColor=#1d3557;" value="rf_transactions" vertex="1">
+          <mxGeometry height="212" width="250" x="905" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_transactions-r0" parent="rf_transactions" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_transactions-r0-k" parent="rf_transactions-r0" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="PK" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_transactions-r0-v" parent="rf_transactions-r0" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="transaction_id : string" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_transactions-r1" parent="rf_transactions" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_transactions-r1-k" parent="rf_transactions-r1" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="FK" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_transactions-r1-v" parent="rf_transactions-r1" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="invoice_id : string" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_transactions-r2" parent="rf_transactions" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_transactions-r2-k" parent="rf_transactions-r2" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_transactions-r2-v" parent="rf_transactions-r2" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="transaction_date : date" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_transactions-r3" parent="rf_transactions" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_transactions-r3-k" parent="rf_transactions-r3" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_transactions-r3-v" parent="rf_transactions-r3" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="transaction_status : string" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_transactions-r4" parent="rf_transactions" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_transactions-r4-k" parent="rf_transactions-r4" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_transactions-r4-v" parent="rf_transactions-r4" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="transaction_value : number" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_transactions-r5" parent="rf_transactions" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_transactions-r5-k" parent="rf_transactions-r5" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_transactions-r5-v" parent="rf_transactions-r5" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="denied_reason : string  (optional)" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_transactions-r6" parent="rf_transactions" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="186" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_transactions-r6-k" parent="rf_transactions-r6" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_transactions-r6-v" parent="rf_transactions-r6" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="merchant : string" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_transaction_disputes" parent="1" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;fillColor=#f5f7fa;strokeColor=#1d3557;fontSize=13;fontColor=#1d3557;" value="rf_transaction_disputes" vertex="1">
+          <mxGeometry height="212" width="250" x="905" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_transaction_disputes-r0" parent="rf_transaction_disputes" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_transaction_disputes-r0-k" parent="rf_transaction_disputes-r0" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="PK" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_transaction_disputes-r0-v" parent="rf_transaction_disputes-r0" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="dispute_id : string" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_transaction_disputes-r1" parent="rf_transaction_disputes" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_transaction_disputes-r1-k" parent="rf_transaction_disputes-r1" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="FK" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_transaction_disputes-r1-v" parent="rf_transaction_disputes-r1" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="transaction_id : string" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_transaction_disputes-r2" parent="rf_transaction_disputes" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_transaction_disputes-r2-k" parent="rf_transaction_disputes-r2" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_transaction_disputes-r2-v" parent="rf_transaction_disputes-r2" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="interaction_id : string" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_transaction_disputes-r3" parent="rf_transaction_disputes" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_transaction_disputes-r3-k" parent="rf_transaction_disputes-r3" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_transaction_disputes-r3-v" parent="rf_transaction_disputes-r3" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="open_date : date" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_transaction_disputes-r4" parent="rf_transaction_disputes" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_transaction_disputes-r4-k" parent="rf_transaction_disputes-r4" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_transaction_disputes-r4-v" parent="rf_transaction_disputes-r4" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="dispute_status : string" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_transaction_disputes-r5" parent="rf_transaction_disputes" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_transaction_disputes-r5-k" parent="rf_transaction_disputes-r5" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_transaction_disputes-r5-v" parent="rf_transaction_disputes-r5" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="summary : string" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_transaction_disputes-r6" parent="rf_transaction_disputes" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="186" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_transaction_disputes-r6-k" parent="rf_transaction_disputes-r6" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_transaction_disputes-r6-v" parent="rf_transaction_disputes-r6" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="rejection_reason : string" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="rf_transactions" style="edgeStyle=entityRelationEdgeStyle;rounded=0;html=1;endArrow=ERzeroToOne;endFill=1;startArrow=ERone;startFill=0;strokeColor=#1d3557;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="rf_transaction_disputes" value="1 : 0..1  (transaction_id)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="one-dispute" value="&lt;font style=&quot;font-size: 10px&quot;&gt;A transaction carries &lt;b&gt;at most one&lt;/b&gt; dispute, ever: a charge already disputed never gets a second one, whether that one is still under review, was allowed, or was turned down (ADR-019). rejection_reason is set only on a rejected dispute; interaction_id and summary are empty on every dispute loaded with the table, which had no conversation behind it (ADR-016).&lt;/font&gt;" style="shape=note;whiteSpace=wrap;html=1;size=14;fillColor=#f9f9f9;strokeColor=#b3b3b3;align=left;spacingLeft=8;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="600" y="620" width="280" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="rf_clients" style="edgeStyle=entityRelationEdgeStyle;rounded=0;html=1;endArrow=ERoneToMany;endFill=1;startArrow=ERone;startFill=0;strokeColor=#1d3557;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="rf_cards" value="1 : N  (client_id)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="rf_cards" style="edgeStyle=entityRelationEdgeStyle;rounded=0;html=1;endArrow=ERoneToMany;endFill=1;startArrow=ERone;startFill=0;strokeColor=#1d3557;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="rf_card_invoices" value="1 : N  (card_id)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="rf_card_invoices" style="edgeStyle=entityRelationEdgeStyle;rounded=0;html=1;endArrow=ERoneToMany;endFill=1;startArrow=ERone;startFill=0;strokeColor=#1d3557;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="rf_transactions" value="1 : N  (invoice_id)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_client_investments" parent="1" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;fillColor=#f5f7fa;strokeColor=#1d3557;fontSize=13;fontColor=#1d3557;" value="rf_client_investments" vertex="1">
+          <mxGeometry height="134" width="250" x="20" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_client_investments-r0" parent="rf_client_investments" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_client_investments-r0-k" parent="rf_client_investments-r0" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="PK" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_client_investments-r0-v" parent="rf_client_investments-r0" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="id : string" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_client_investments-r1" parent="rf_client_investments" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_client_investments-r1-k" parent="rf_client_investments-r1" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="FK" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_client_investments-r1-v" parent="rf_client_investments-r1" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="client_id : string" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_client_investments-r2" parent="rf_client_investments" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_client_investments-r2-k" parent="rf_client_investments-r2" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_client_investments-r2-v" parent="rf_client_investments-r2" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="invested_qtty : number" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_client_investments-r3" parent="rf_client_investments" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_client_investments-r3-k" parent="rf_client_investments-r3" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_client_investments-r3-v" parent="rf_client_investments-r3" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="blocked_qtty : number" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated" parent="1" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;fillColor=#f5f7fa;strokeColor=#1d3557;fontSize=13;fontColor=#1d3557;" value="rf_interactions_consolidated" vertex="1">
+          <mxGeometry height="342" width="250" x="315" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r0" parent="rf_interactions_consolidated" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r0-k" parent="rf_interactions_consolidated-r0" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="PK" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r0-v" parent="rf_interactions_consolidated-r0" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="interaction_id : string" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r1" parent="rf_interactions_consolidated" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r1-k" parent="rf_interactions_consolidated-r1" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r1-v" parent="rf_interactions_consolidated-r1" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="protocol_number : string" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r2" parent="rf_interactions_consolidated" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r2-k" parent="rf_interactions_consolidated-r2" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="FK" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r2-v" parent="rf_interactions_consolidated-r2" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="client_id : string" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r3" parent="rf_interactions_consolidated" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r3-k" parent="rf_interactions_consolidated-r3" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r3-v" parent="rf_interactions_consolidated-r3" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="interaction_date : date" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r4" parent="rf_interactions_consolidated" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r4-k" parent="rf_interactions_consolidated-r4" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r4-v" parent="rf_interactions_consolidated-r4" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="card_blocked : boolean" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r5" parent="rf_interactions_consolidated" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r5-k" parent="rf_interactions_consolidated-r5" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r5-v" parent="rf_interactions_consolidated-r5" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="card_unlocked : boolean" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r6" parent="rf_interactions_consolidated" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="186" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r6-k" parent="rf_interactions_consolidated-r6" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r6-v" parent="rf_interactions_consolidated-r6" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="dispute_filed : boolean" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r7" parent="rf_interactions_consolidated" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="212" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r7-k" parent="rf_interactions_consolidated-r7" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r7-v" parent="rf_interactions_consolidated-r7" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="threat_to_sue : boolean" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r8" parent="rf_interactions_consolidated" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="238" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r8-k" parent="rf_interactions_consolidated-r8" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r8-v" parent="rf_interactions_consolidated-r8" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="threat_to_leave : boolean" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r9" parent="rf_interactions_consolidated" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="264" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r9-k" parent="rf_interactions_consolidated-r9" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r9-v" parent="rf_interactions_consolidated-r9" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="extreme_dissatisfaction : boolean" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r10" parent="rf_interactions_consolidated" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r10-k" parent="rf_interactions_consolidated-r10" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r10-v" parent="rf_interactions_consolidated-r10" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="summary_brief : string" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r11" parent="rf_interactions_consolidated" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="26" width="250" y="316" as="geometry" />
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r11-k" parent="rf_interactions_consolidated-r11" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;fontStyle=1;align=center;spacingLeft=0;fontColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="26" width="42" as="geometry">
+            <mxRectangle height="26" width="42" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rf_interactions_consolidated-r11-v" parent="rf_interactions_consolidated-r11" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;fontSize=11;strokeColor=#b9c0cc;" value="summary_detailed : string" vertex="1">
+          <mxGeometry height="26" width="208" x="42" as="geometry">
+            <mxRectangle height="26" width="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="rf_clients" style="edgeStyle=entityRelationEdgeStyle;rounded=0;html=1;endArrow=ERoneToMany;endFill=1;startArrow=ERone;startFill=0;strokeColor=#1d3557;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="rf_client_investments" value="1 : N  (client_id)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="rf_clients" style="edgeStyle=entityRelationEdgeStyle;rounded=0;html=1;endArrow=ERoneToMany;endFill=1;startArrow=ERone;startFill=0;strokeColor=#1d3557;exitX=1;exitY=0.9;entryX=0.5;entryY=0;" target="rf_interactions_consolidated" value="1 : N  (client_id)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="rf_interactions_consolidated" style="edgeStyle=entityRelationEdgeStyle;rounded=0;html=1;endArrow=ERoneToMany;endFill=1;startArrow=ERone;startFill=0;strokeColor=#1d3557;dashed=1;exitX=1;exitY=0.35;entryX=0;entryY=0.5;" target="rf_transaction_disputes" value="1 : N  (interaction_id)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="investments-note" value="A client pledges &lt;b&gt;a sum, not an asset they chose&lt;/b&gt;: the table holds what is invested and what is held against a limit, and nothing else &amp;#8212; no instrument, maturity, liquidity or valuation date (ADR-021). A pledge is spread across the rows in a stable order, so which row carries it is bookkeeping the caller never hears, and &quot;which of my investments is blocked?&quot; has no answer on this line. A client with no row here holds nothing, which is the same position as holding nothing free." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8f8f8;strokeColor=#999999;fontSize=10;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;spacingRight=8;" vertex="1" parent="1">
+          <mxGeometry x="20" y="560" width="250" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="interactions-note" value="&lt;b&gt;One row per call, written twice&lt;/b&gt; and keyed by the platform&#x27;s own communication id (ADR-026). &lt;i&gt;record_interaction_result&lt;/i&gt; writes the deeds at OnEnd, from KV rather than off a transcript, and the three booleans are written even as false: a call where nothing was blocked is a fact, and an empty column would be indistinguishable from a call the recorder never reached. &lt;i&gt;record_interaction_tags&lt;/i&gt; adds the three judged attitudes and the enhancer&#x27;s summaries at OnEnhancedFinished (ADR-027). &lt;i&gt;client_id&lt;/i&gt; and &lt;i&gt;protocol_number&lt;/i&gt; are omitted rather than blanked, so a call that never verified anyone leaves them empty. This is the one table the back-office app reads directly (ADR-030)." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8f8f8;strokeColor=#999999;fontSize=10;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;spacingRight=8;" vertex="1" parent="1">
+          <mxGeometry x="20" y="760" width="545" height="130" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

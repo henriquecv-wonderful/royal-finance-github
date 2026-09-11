@@ -1,0 +1,136 @@
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="change-credit-card-limit" name="Change credit card limit">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1700" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="title" value="change_credit_card_limit &#8212; the only route to a limit, and what a dollar above the approval costs" style="text;html=1;fontSize=18;fontStyle=1;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="25" width="1100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" value="ADR-020 sets the ratio at two to one, makes the release its exact inverse, and puts the routing between the two increase tools in a tool&#8217;s reply rather than in the prompt. ADR-021 bounds it: the collateral is an undifferentiated sum and nothing ever calls margin. Where the drawing and a record disagree, the record is right." style="text;html=1;fontSize=11;fontColor=#666666;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="50" width="1340" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="caller" value="&lt;b&gt;Cardholder&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;wants more limit, or less&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="105" width="200" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="agent" value="&lt;b&gt;The agent, in this skill&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;It holds no ratio, no eligibility rule and no figure. Every amount the caller hears was composed by a tool and is said exactly as written (ADR-011). The&lt;br&gt;tool is called before the caller is asked for anything &#8212; the card, the amount &#8212; because the tool asks for what it needs, in the order the call should happen.&lt;br&gt;A caller cannot argue the agent into a different multiplier, because the agent does not have one.&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="300" y="100" width="800" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="scope" value="&lt;b&gt;Not on this line&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;raising the approved credit&lt;br&gt;itself &#183; withdrawing an&lt;br&gt;investment &#183; any advice about&lt;br&gt;one &#183; issuing a card &#183; a payment&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="100" width="220" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e-caller" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="caller" target="agent">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="band-a" value="&lt;b&gt;request_increase_credit_card_limit&lt;/b&gt; &#8212; every request for more limit enters here, whatever the caller said about investments&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;It is what establishes which of the two increases this is. Cheap, because it changes nothing until the caller has agreed &#8212; and never skipped, because a caller whose increase was free must not be asked to pledge for it.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f4f6fb;strokeColor=#6c8ebf;fontSize=12;verticalAlign=top;spacingTop=6;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="40" y="215" width="1340" height="300" as="geometry" />
+        </mxCell>
+
+        <mxCell id="a1" value="&lt;b&gt;1 &#183; L1, then the position&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;L1 first, not L2: the card has to be&lt;br&gt;found before there is anything to&lt;br&gt;text a code about.&lt;br&gt;&lt;b&gt;rf-get-limit-position&lt;/b&gt; returns the&lt;br&gt;approved credit, every card, and the&lt;br&gt;limit committed across the ones that&lt;br&gt;count &#8212; active and blocked, never&lt;br&gt;canceled.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;verticalAlign=top;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="60" y="290" width="300" height="145" as="geometry" />
+        </mxCell>
+
+        <mxCell id="a2" value="&lt;b&gt;2 &#183; what they asked for&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;The total they named, or the amount&lt;br&gt;to add &#8212; never both, and never a&lt;br&gt;figure the agent worked out.&lt;br&gt;&lt;b&gt;resolveTarget&lt;/b&gt; does the arithmetic,&lt;br&gt;and coerces what a model writes for&lt;br&gt;an amount it heard: 8000, &quot;8,000&quot;,&lt;br&gt;&quot;$8000&quot;. Anything else is unsaid, and&lt;br&gt;the tool asks.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;verticalAlign=top;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="390" y="290" width="300" height="145" as="geometry" />
+        </mxCell>
+
+        <mxCell id="a3" value="&lt;b&gt;3 &#183; does it clear the approval?&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;committed &#8722; this card&#8217;s limit + target,&lt;br&gt;against &lt;b&gt;pre_approved_limit&lt;/b&gt;.&lt;br&gt;&lt;br&gt;A figure at or below what the card&lt;br&gt;carries is not an increase: both&lt;br&gt;figures are read back and the&lt;br&gt;reduction is offered instead.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;verticalAlign=top;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="720" y="290" width="300" height="145" as="geometry" />
+        </mxCell>
+
+        <mxCell id="a4" value="&lt;b&gt;4 &#183; it fits &#8594; grant it&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;Nothing has to be pledged, so&lt;br&gt;investments are never mentioned.&lt;br&gt;Read back what the card carries and&lt;br&gt;what it would carry, take the&lt;br&gt;confirmation, &lt;i&gt;then&lt;/i&gt; ask for the code.&lt;br&gt;&lt;br&gt;&#8594; the write, at the foot of the page.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;verticalAlign=top;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="290" width="310" height="145" as="geometry" />
+        </mxCell>
+
+        <mxCell id="a5" value="&lt;b&gt;it does not fit &#8594; hand it over, in the same turn and in silence.&lt;/b&gt; &lt;font style=&quot;font-size: 10px&quot;&gt;Nothing is refused and nothing is decided: the reply names no figure the caller would need, describes no arrangement, and forgets any confirmation given for the unsecured amount &#8212; that one was not going to cost them their savings. The routing lives here, in the reply, and not in the prompt (ADR-008 applied inside a skill), so the tool that charges for collateral can never be the first one called.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;verticalAlign=middle;align=left;spacingLeft=10;spacingRight=10;" vertex="1" parent="1">
+          <mxGeometry x="60" y="447" width="1300" height="55" as="geometry" />
+        </mxCell>
+
+        <mxCell id="band-b" value="&lt;b&gt;request_increase_credit_card_limit_with_guarantees&lt;/b&gt; &#8212; a limit past the approval, held up by what the cardholder has invested here&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;The most consequential write in the agent, because it moves patrimony and it is dangerous by succeeding. Every figure in this band is composed here; the agent states none of them on its own.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fdf7ef;strokeColor=#d6b656;fontSize=12;verticalAlign=top;spacingTop=6;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="40" y="545" width="1340" height="345" as="geometry" />
+        </mxCell>
+
+        <mxCell id="b1" value="&lt;b&gt;1 &#183; price it&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;Credit up to the approval costs&lt;br&gt;nothing. Every dollar above it is held&lt;br&gt;&lt;b&gt;twice over&lt;/b&gt; from what they hold.&lt;br&gt;&lt;br&gt;required = 2 &#215; (total &#8722; approved)&lt;br&gt;&lt;br&gt;&lt;b&gt;COLLATERAL_PER_DOLLAR&lt;/b&gt; lives in&lt;br&gt;lib/limits.ts and in the write&lt;br&gt;Function, and is named in no prompt.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=11;verticalAlign=top;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="60" y="620" width="300" height="160" as="geometry" />
+        </mxCell>
+
+        <mxCell id="b2" value="&lt;b&gt;2 &#183; can they cover it?&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;b&gt;rf-get-client-investments&lt;/b&gt; answers in&lt;br&gt;aggregate: invested, already held,&lt;br&gt;free. A client with no row holds&lt;br&gt;nothing, which is the same position&lt;br&gt;as nothing free.&lt;br&gt;&lt;br&gt;What is &lt;i&gt;newly&lt;/i&gt; held is what they are&lt;br&gt;agreeing to &#8212; collateral already&lt;br&gt;behind a limit is not pledged twice.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=11;verticalAlign=top;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="390" y="620" width="300" height="160" as="geometry" />
+        </mxCell>
+
+        <mxCell id="b3" value="&lt;b&gt;3 &#183; nothing invested &#8594; no route&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;Say plainly it cannot be granted, and&lt;br&gt;that a limit above the approval is&lt;br&gt;backed by investments held here.&lt;br&gt;&lt;br&gt;No figure they would need, no review&lt;br&gt;by anyone, and no suggestion that&lt;br&gt;they invest. A refusal is not an&lt;br&gt;opening to sell.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;verticalAlign=top;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="720" y="620" width="300" height="160" as="geometry" />
+        </mxCell>
+
+        <mxCell id="b4" value="&lt;b&gt;3&#8242; &#183; not enough &#8594; refuse with an offer&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;Say what would have to be held and&lt;br&gt;what they hold. Then the largest limit&lt;br&gt;their holding &lt;i&gt;does&lt;/i&gt; support &#8212; the same&lt;br&gt;arithmetic inverted &#8212; and end there.&lt;br&gt;&lt;br&gt;approved + invested &#247; 2, less the&lt;br&gt;other cards. Offered only when it is&lt;br&gt;above what the card already carries.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;verticalAlign=top;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="620" width="310" height="160" as="geometry" />
+        </mxCell>
+
+        <mxCell id="b5" value="&lt;b&gt;4 &#183; they can cover it &#8594; the read-back that names both sides.&lt;/b&gt; &lt;font style=&quot;font-size: 10px&quot;&gt;The limit the card would carry, &lt;i&gt;and&lt;/i&gt; the money that stops being theirs to move &#8212; a caller who only heard the limit has not agreed to the pledge. Then that the money stays theirs and stays invested, cannot be withdrawn while it backs the limit, and comes back if the limit does. Whether it is a &lt;i&gt;good idea&lt;/i&gt; is never answered: that is their call. The confirmation goes to KV as &lt;b&gt;card.limit_intent&lt;/b&gt; &lt;i&gt;before&lt;/i&gt; the L2 gate, so the trip to be verified cannot lose it. &#8594; the write.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;verticalAlign=middle;align=left;spacingLeft=10;spacingRight=10;" vertex="1" parent="1">
+          <mxGeometry x="60" y="792" width="1300" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="band-c" value="&lt;b&gt;request_reduce_credit_card_limit&lt;/b&gt; &#8212; less limit, and the pledge that is no longer needed for it&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;The inverse of the pledge, which is what makes the collateral recoverable: a limit taken back under the approval releases everything that was held for it.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f3f8f3;strokeColor=#82b366;fontSize=12;verticalAlign=top;spacingTop=6;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="40" y="920" width="1340" height="290" as="geometry" />
+        </mxCell>
+
+        <mxCell id="c1" value="&lt;b&gt;1 &#183; the new limit&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;Below what the card carries, or it is&lt;br&gt;an increase and goes back to the&lt;br&gt;first tool.&lt;br&gt;&lt;br&gt;Never nothing: a card cannot be left&lt;br&gt;with no limit. A caller who wants the&lt;br&gt;card stopped wants a block, which is&lt;br&gt;another skill &#8212; offered, not done in&lt;br&gt;the same breath.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;verticalAlign=top;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="60" y="995" width="300" height="160" as="geometry" />
+        </mxCell>
+
+        <mxCell id="c2" value="&lt;b&gt;2 &#183; what comes back&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;required after = 2 &#215; the excess that&lt;br&gt;is left, and the release is whatever&lt;br&gt;is held above that.&lt;br&gt;&lt;br&gt;Never more than is actually held,&lt;br&gt;which is what stops a second&lt;br&gt;reduction paying out against a pledge&lt;br&gt;already given back. Worked out from&lt;br&gt;the whole position, not this card.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;verticalAlign=top;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="390" y="995" width="300" height="160" as="geometry" />
+        </mxCell>
+
+        <mxCell id="c3" value="&lt;b&gt;3 &#183; say the release before they agree&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;A reduction that quietly unfreezes&lt;br&gt;money is a change to their&lt;br&gt;investments nobody told them about.&lt;br&gt;So the release is part of what they&lt;br&gt;confirm, not a footnote afterwards.&lt;br&gt;&lt;br&gt;Where nothing is held, investments&lt;br&gt;are not mentioned at all.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;verticalAlign=top;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="720" y="995" width="300" height="160" as="geometry" />
+        </mxCell>
+
+        <mxCell id="c4" value="&lt;b&gt;4 &#183; then the code, then the write&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;L2 is asked for here rather than at&lt;br&gt;the top, on all three tools: a code&lt;br&gt;texted about a change the caller has&lt;br&gt;not agreed to, or one that was never&lt;br&gt;possible, is a round trip spent on&lt;br&gt;nothing.&lt;br&gt;&lt;br&gt;&#8594; the write, below.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;verticalAlign=top;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="995" width="310" height="160" as="geometry" />
+        </mxCell>
+
+        <mxCell id="band-d" value="&lt;b&gt;rf-set-card-limit&lt;/b&gt; &#8212; one Function behind all three tools, and it decides again before it writes&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;A tool never reads a table. It calls a Function, and this one is both the write and the second opinion.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fdf3f3;strokeColor=#b85450;fontSize=12;verticalAlign=top;spacingTop=6;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1240" width="1340" height="215" as="geometry" />
+        </mxCell>
+
+        <mxCell id="d1" value="&lt;b&gt;It re-derives the whole position&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;and refuses rather than writing when&lt;br&gt;the limit is not covered. The tool&lt;br&gt;checked the same rule a turn earlier,&lt;br&gt;and the duplication is deliberate: the&lt;br&gt;caller confirms, the call leaves for a&lt;br&gt;texted code, and a card limit or a&lt;br&gt;holding can move in between. A limit&lt;br&gt;written against collateral that is no&lt;br&gt;longer free is not recoverable by&lt;br&gt;apologising.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=11;verticalAlign=top;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1310" width="360" height="130" as="geometry" />
+        </mxCell>
+
+        <mxCell id="d2" value="&lt;b&gt;Two writes, riskiest last&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;There is no transaction across them, so they are ordered instead.&lt;br&gt;&lt;br&gt;&lt;b&gt;Raising:&lt;/b&gt; pledge, then raise the limit.&lt;br&gt;&lt;b&gt;Lowering:&lt;/b&gt; lower the limit, then release.&lt;br&gt;&lt;br&gt;Whichever leaves the position &lt;i&gt;over-secured&lt;/i&gt; goes first, so a failure between the two costs the client the use of money that is still theirs &#8212; never a limit standing with nothing behind it.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;verticalAlign=top;spacingTop=4;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="450" y="1310" width="450" height="130" as="geometry" />
+        </mxCell>
+
+        <mxCell id="d3" value="&lt;b&gt;What it touches&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;b&gt;rf_clients&lt;/b&gt; &#183; the approved credit, read&lt;br&gt;&lt;b&gt;rf_cards&lt;/b&gt; &#183; one card&#8217;s limit, written&lt;br&gt;&lt;b&gt;rf_client_investments&lt;/b&gt; &#183; the pledge,&lt;br&gt;spread across the holdings in a stable&lt;br&gt;order&lt;br&gt;&lt;br&gt;Reads go through &lt;b&gt;rf-get-limit-position&lt;/b&gt;&lt;br&gt;and &lt;b&gt;rf-get-client-investments&lt;/b&gt;. No id&lt;br&gt;ever reaches the model: a card is&lt;br&gt;named by its last four digits.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eef1f6;strokeColor=#1d3557;fontSize=11;verticalAlign=top;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="930" y="1310" width="430" height="130" as="geometry" />
+        </mxCell>
+
+        <mxCell id="worked" value="&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;b&gt;The worked example, both ways&lt;/b&gt;&lt;br&gt;&lt;br&gt;Approved 10,000. Cards of 5,000 and 2,000.&lt;br&gt;&lt;br&gt;Asks for 8,000 on the second &#8594; total 13,000,&lt;br&gt;excess 3,000, &lt;b&gt;6,000 held&lt;/b&gt;.&lt;br&gt;&lt;br&gt;Back down to 6,000 &#8594; excess 1,000, so 2,000&lt;br&gt;is still needed and &lt;b&gt;4,000 comes back&lt;/b&gt;.&lt;br&gt;&lt;br&gt;Back to 5,000 &#8594; no excess, &lt;b&gt;all 6,000 back&lt;/b&gt;.&lt;/font&gt;" style="shape=note;whiteSpace=wrap;html=1;size=14;fillColor=#f9f9f9;strokeColor=#b3b3b3;align=left;spacingLeft=8;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1485" width="340" height="185" as="geometry" />
+        </mxCell>
+
+        <mxCell id="bound1" value="&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;b&gt;Investments are not differentiated (ADR-021)&lt;/b&gt;&lt;br&gt;&lt;br&gt;The table holds an amount invested and an amount&lt;br&gt;held, and nothing else &#8212; no instrument, maturity,&lt;br&gt;liquidity or valuation date. A client pledges a sum,&lt;br&gt;not an asset they chose, so which row carries it is&lt;br&gt;bookkeeping the caller never hears.&lt;br&gt;&lt;br&gt;The cost is stated: &quot;which of my investments is&lt;br&gt;blocked?&quot; has no answer on this line.&lt;/font&gt;" style="shape=note;whiteSpace=wrap;html=1;size=14;fillColor=#f9f9f9;strokeColor=#b3b3b3;align=left;spacingLeft=8;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="400" y="1485" width="470" height="185" as="geometry" />
+        </mxCell>
+
+        <mxCell id="bound2" value="&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;b&gt;Nothing calls margin (ADR-021)&lt;/b&gt;&lt;br&gt;&lt;br&gt;Pledged value is fixed when written. Nothing revalues it,&lt;br&gt;nothing monitors it, and no limit is ever reduced because&lt;br&gt;the collateral behind it fell. The only thing that recomputes&lt;br&gt;the position is a caller asking for a change.&lt;br&gt;&lt;br&gt;This is not a gap Agent 1 could fill: &lt;b&gt;a margin call has no&lt;br&gt;caller on the line.&lt;/b&gt; Revaluation, decision and outbound&lt;br&gt;contact are asynchronous, and this agent&#8217;s test for&lt;br&gt;belonging is that the journey finishes during the call.&lt;/font&gt;" style="shape=note;whiteSpace=wrap;html=1;size=14;fillColor=#fdf3f3;strokeColor=#b85450;align=left;spacingLeft=8;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="890" y="1485" width="490" height="185" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e-a5-b" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#d6b656;strokeWidth=2;" edge="1" parent="1" source="a5" target="band-b">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

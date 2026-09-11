@@ -1,0 +1,135 @@
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="card-blocks-and-disputes" name="Card blocks and disputes">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="title" value="card_blockings_and_transaction_disputes &#8212; three writes, and what has to be true before each one" style="text;html=1;fontSize=18;fontStyle=1;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="25" width="1000" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" value="ADR-017 makes taking a card out of use a recommendation and puts L2 on both strengths, superseding ADR-014. ADR-015 decides how a charge is addressed, ADR-019 what a dispute costs and how many charges one answer can cover. Where the drawing and a record disagree, the record is right." style="text;html=1;fontSize=11;fontColor=#666666;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="50" width="1340" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="caller" value="&lt;b&gt;Cardholder&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;reports what happened, or&lt;br&gt;a charge they do not recognise&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="105" width="200" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="agent" value="&lt;b&gt;The agent, in this skill&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;A caller who says a card was lost or stolen, or that a charge is not theirs, has asked for nothing yet: they have reported an&lt;br&gt;event. The tool is called on that sentence alone, in the same turn, and it answers with what it needs next &#8212; or with what to&lt;br&gt;advise. The agent asks the caller for nothing the tool has not asked for first, and never for a date on its own initiative.&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="300" y="100" width="800" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="scope" value="&lt;b&gt;Not on this line&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;issuing, replacing or reissuing&lt;br&gt;a card &#183; reversing or refunding&lt;br&gt;a charge &#183; taking a payment &#183;&lt;br&gt;changing a limit&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="100" width="220" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="block-band" value="&lt;b&gt;request_block_card&lt;/b&gt; &#8212; taking a card out of use, at one of two strengths&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;The caller is not choosing between them; they are reporting an event, and which measure fits is advice (ADR-017). Nothing is written until they have heard what it does and said yes.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fdf3f3;strokeColor=#b85450;fontSize=12;verticalAlign=top;spacingTop=6;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="40" y="230" width="1340" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="b1" value="&lt;b&gt;1 &#183; the report&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;Called with nothing. Writes nothing.&lt;br&gt;Asks for the card by its last four&lt;br&gt;digits if none is established, then&lt;br&gt;whether it was lost or stolen &#8212; it&lt;br&gt;never chooses that for the caller.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;verticalAlign=top;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="60" y="300" width="300" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="b2" value="&lt;b&gt;2 &#183; the recommendation&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;b&gt;lost &#8594; block&lt;/b&gt;, which can be lifted if&lt;br&gt;the card turns up. &lt;b&gt;stolen &#8594; cancel&lt;/b&gt;,&lt;br&gt;because a block can be lifted by&lt;br&gt;anyone who passes verification.&lt;br&gt;Said once, and it can be declined.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;verticalAlign=top;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="380" y="300" width="300" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="b3" value="&lt;b&gt;3 &#183; the confirmation, then the code&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;What they chose goes to KV as&lt;br&gt;&lt;b&gt;card.status_intent&lt;/b&gt; &lt;i&gt;before&lt;/i&gt; the L2 gate,&lt;br&gt;so the trip to be verified cannot lose&lt;br&gt;it and restart the conversation with&lt;br&gt;the card still live.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;verticalAlign=top;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="700" y="300" width="300" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="b4" value="&lt;b&gt;4 &#183; the write&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;i&gt;rf-set-card-status&lt;/i&gt; checks the same&lt;br&gt;transitions again and refuses one it&lt;br&gt;should not write. &lt;b&gt;blocked&lt;/b&gt; or &lt;b&gt;canceled&lt;/b&gt;,&lt;br&gt;with &lt;b&gt;status_reason&lt;/b&gt; = lost or stolen.&lt;br&gt;A refused write is never reported as done.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;verticalAlign=top;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="300" width="340" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="b-deadends" value="&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;b&gt;Nothing to do:&lt;/b&gt; a card already &lt;b&gt;blocked&lt;/b&gt; is not blocked again &#8212; cancelling it is still open, and that is offered, because a block can be lifted and a cancellation cannot. A card already &lt;b&gt;canceled&lt;/b&gt; is the end of it: nothing can be charged to it, it cannot be brought back for any reason, and no replacement can be arranged here.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f9f9f9;strokeColor=#b3b3b3;fontSize=11;align=left;spacingLeft=10;spacingRight=10;" vertex="1" parent="1">
+          <mxGeometry x="60" y="420" width="1300" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="unlock-band" value="&lt;b&gt;request_unlock_card&lt;/b&gt; &#8212; putting a blocked card back into use&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;Why the card was blocked does not come into it. A stolen card is cancelled rather than blocked, and cancellation is the door that does not open again &#8212; which is what makes it the right answer for a stolen card.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f3f8f3;strokeColor=#82b366;fontSize=12;verticalAlign=top;spacingTop=6;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="40" y="500" width="1340" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="u1" value="&lt;b&gt;blocked &#8594; active&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;L1 finds the card, then L2 before the write, and &lt;b&gt;status_reason&lt;/b&gt; is cleared:&lt;br&gt;the column says why a card is not usable, so a stale &quot;lost&quot; on a card&lt;br&gt;that was found would outlive the block it explained.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;verticalAlign=top;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="60" y="570" width="620" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="u2" value="&lt;b&gt;canceled&lt;/b&gt; stays canceled, for any reason &#183; &lt;b&gt;active&lt;/b&gt; was never blocked&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;A caller telling you a payment was refused is not describing a block: that is a declined&lt;br&gt;transaction, and the account servicing journey is where it can be read. Neither case sends&lt;br&gt;a code &#8212; the rung is asked for only once the card is known to be one that can be unblocked.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f9f9f9;strokeColor=#b3b3b3;fontSize=11;verticalAlign=top;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="700" y="570" width="660" height="65" as="geometry" />
+        </mxCell>
+
+        <mxCell id="dispute-band" value="&lt;b&gt;file_transaction_dispute&lt;/b&gt; &#8212; one dispute per charge, and a charge only ever gets one&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;There is no way for the caller to name a transaction: they do not know its id, and the amount they heard was read to them as words rather than as a figure (ADR-011). So the day is listed once with a position against each charge (ADR-015).&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f4f6fb;strokeColor=#6c8ebf;fontSize=12;verticalAlign=top;spacingTop=6;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="40" y="670" width="1340" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="d1" value="&lt;b&gt;1 &#183; the day, asked last&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;Called with nothing. Verified first,&lt;br&gt;then the card by its last four digits,&lt;br&gt;and only then which day the charge&lt;br&gt;was made &#8212; the third question, not&lt;br&gt;the first. MM-DD; the year is worked&lt;br&gt;out here (ADR-013).&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;verticalAlign=top;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="60" y="740" width="300" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="d2" value="&lt;b&gt;2 &#183; that day&#39;s charges&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;i&gt;rf-find-disputable-transactions&lt;/i&gt;&lt;br&gt;Each with a &lt;b&gt;ref&lt;/b&gt;, the merchant as the&lt;br&gt;statement writes it, the amount in&lt;br&gt;words, and whether it can be disputed.&lt;br&gt;The ids stay in KV; no id, no figure&lt;br&gt;and no date reaches the model.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;verticalAlign=top;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="380" y="740" width="300" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="d3" value="&lt;b&gt;3 &#183; the pick, then the code&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;One ref, several, or every charge on&lt;br&gt;the day &#8212; &quot;all of them&quot; is one answer,&lt;br&gt;not one per charge. What the caller&lt;br&gt;says is wrong goes on the case in&lt;br&gt;their words. Both to KV as&lt;br&gt;&lt;b&gt;dispute.pending&lt;/b&gt;, then the L2 gate.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;verticalAlign=top;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="700" y="740" width="300" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="d4" value="&lt;b&gt;4 &#183; one dispute per charge&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;i&gt;rf-file-transaction-dispute&lt;/i&gt; walks each&lt;br&gt;transaction back to its card and its&lt;br&gt;owner before it writes, and decides&lt;br&gt;each on its own: one refusal does not&lt;br&gt;stop the rest. Opened as &lt;b&gt;in_analysis&lt;/b&gt;,&lt;br&gt;against the conversation that filed it.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;verticalAlign=top;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="740" width="340" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="d-deadends" value="&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;b&gt;Cannot be disputed, and no code is sent for either:&lt;/b&gt; a charge that was &lt;b&gt;denied&lt;/b&gt;, since nothing was ever billed and no money left the account &#8212; and a charge that &lt;b&gt;already has a dispute&lt;/b&gt;, whether it is still under review, was allowed, or was turned down. That dispute comes back with the day it was opened, where it stands, and why it was turned down; another is never opened on the same charge. A mixed result is reported in full, because a caller who hears only the disputes that were opened will believe the others were too.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f9f9f9;strokeColor=#b3b3b3;fontSize=11;align=left;spacingLeft=10;spacingRight=10;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="60" y="870" width="1300" height="55" as="geometry" />
+        </mxCell>
+
+        <mxCell id="gate" value="&lt;b&gt;Every tool gates itself, and every write costs both rungs&lt;/b&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;  &#8212; gateOrRequest(kv, level, self) runs before the tool looks at a parameter. &lt;b&gt;L1 at the top&lt;/b&gt; of every handler; &lt;b&gt;L2 immediately before the write&lt;/b&gt;, never at the top, so no code is ever texted about a card that is already out of use, a charge that cannot be disputed, or a decision the caller has not made yet. What was confirmed is in KV before the gate, so the trip does not cost the caller the flow. Below the level: authentication_required and authentication_return_point are written, a refusal comes back, and nothing is said about the card or the charge.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;align=left;spacingLeft=10;spacingRight=10;" vertex="1" parent="1">
+          <mxGeometry x="40" y="960" width="1340" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="advice" value="&lt;font style=&quot;font-size: 10px&quot;&gt;&quot;My card was stolen, block it&quot; is the sentence a caller actually says, and it asks for the weaker of the two measures. The recommendation is said once, with what it does; then whatever they chose is what happens. It is their card (ADR-017).&lt;/font&gt;" style="shape=note;whiteSpace=wrap;html=1;size=14;fillColor=#f9f9f9;strokeColor=#b3b3b3;align=left;spacingLeft=8;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1080" width="240" height="150" as="geometry" />
+        </mxCell>
+
+        <mxCell id="auth" value="&lt;b&gt;client_authentication&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;Reads from KV which level is needed and where to go back to, runs the missing rung, and&lt;br&gt;returns a directive naming the skill and the tool. The code is announced as what it is &lt;i&gt;for&lt;/i&gt;&lt;br&gt;before what it is: to confirm what the caller asked for. See 04-client-authentication.&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1100" width="580" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="kv" value="&lt;b&gt;What KV carries across a trip&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;b&gt;auth.*&lt;/b&gt; who is verified, to which rung, and their name&lt;br&gt;&lt;b&gt;authentication_required&lt;/b&gt; / &lt;b&gt;authentication_return_point&lt;/b&gt; what to reach, where to return&lt;br&gt;&lt;b&gt;card.id&lt;/b&gt; and &lt;b&gt;card.last_four&lt;/b&gt; the card this call is about (ADR-010)&lt;br&gt;&lt;b&gt;card.status_intent&lt;/b&gt; the measure the caller confirmed, and what happened to the card&lt;br&gt;&lt;b&gt;dispute.candidates&lt;/b&gt; the day listed, with a ref and an id against each charge&lt;br&gt;&lt;b&gt;dispute.pending&lt;/b&gt; the charges picked and what the caller said about them&lt;br&gt;&lt;br&gt;None of it reaches the model unless a tool puts it in a reply, which is why every id lives here and only here.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eef1f6;strokeColor=#1d3557;fontSize=12;verticalAlign=top;spacingTop=6;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="920" y="1080" width="460" height="150" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e-caller" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="caller" target="agent">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-scope" value="&lt;font style=&quot;font-size: 10px&quot;&gt;says so plainly&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="agent" target="scope">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-block" value="&lt;font style=&quot;font-size: 10px&quot;&gt;calls the tool the request needs&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.2;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="agent" target="block-band">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e-b12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="b1" target="b2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-b23" value="&lt;font style=&quot;font-size: 10px&quot;&gt;confirmed&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="b2" target="b3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-b34" value="&lt;font style=&quot;font-size: 10px&quot;&gt;code confirmed&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="b3" target="b4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e-d12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="d1" target="d2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-d23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="d2" target="d3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-d34" value="&lt;font style=&quot;font-size: 10px&quot;&gt;code confirmed&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="d3" target="d4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e-refuse" value="&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;b&gt;1.&lt;/b&gt; refusal: the rung it needs,&lt;br&gt;and where to come back to&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;strokeColor=#b85450;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gate" target="auth">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-return" value="&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;b&gt;2.&lt;/b&gt; verified: activate this skill and&lt;br&gt;call that tool again, silently&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#82b366;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="auth" target="gate">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="twice" value="&lt;font style=&quot;font-size: 10px&quot;&gt;Every one of these three journeys makes the trip &lt;b&gt;twice&lt;/b&gt;: once for L1, before anything about the card or the charge is discussed, and again for L2 once the caller has settled on what they want. The second trip is the authorisation of the write itself.&lt;/font&gt;" style="shape=note;whiteSpace=wrap;html=1;size=14;fillColor=#f9f9f9;strokeColor=#b3b3b3;align=left;spacingLeft=8;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1210" width="580" height="60" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
